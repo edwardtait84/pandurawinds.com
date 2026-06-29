@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wind Quintet</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#1f2937}
+header{position:fixed;top:0;width:100%;z-index:1000}
+.navbar{background:#1e5aa8;color:white;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.logo{font-size:1.5rem;font-weight:bold}
+.nav-links{display:flex;gap:18px}
+.nav-links a{color:white;text-decoration:none;padding:8px 12px;border-radius:4px}
+.nav-links a:hover{background:white;color:#1e5aa8}
+.menu-toggle{display:none;color:white;cursor:pointer;font-size:1.1rem}
+.mobile{display:none;flex-direction:column;background:white}
+.mobile a{color:#1e5aa8;text-decoration:none;padding:12px;border-bottom:1px solid #ddd}
+.mobile a:hover{background:#1e5aa8;color:white}
+section{padding:100px 10% 60px}
+.hero{padding-top:140px;background:#f4f7fb;text-align:center}
+.quote{font-style:italic;font-size:1.3rem;margin:30px auto;max-width:800px}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.bio-card,img.placeholder{width:100%}
+.placeholder{background:#dbeafe;height:220px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.bio-card{border:1px solid #ddd;border-radius:8px;padding:15px}
+.embed{height:250px;border:2px dashed #aaa;border-radius:8px;display:flex;align-items:center;justify-content:center}
+footer{background:#1e5aa8;color:white;text-align:center;padding:20px}
+.social a{font-size:2rem;margin:0 10px;color:#1e5aa8}
+@media(max-width:850px){
+.nav-links{display:none}
+.menu-toggle{display:block}
+.mobile.show{display:flex}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="navbar">
+<div class="logo">Wind Quintet</div>
+<nav class="nav-links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#musicians">Musicians</a><a href="#videos">Videos</a><a href="#concerts">Upcoming Concerts</a><a href="#photos">Photos</a><a href="#contact">Contact</a>
+</nav>
+<div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i> Menu</div>
+</div>
+<div class="mobile" id="mobileMenu">
+<a href="#home">Home</a><a href="#about">About</a><a href="#musicians">Musicians</a><a href="#videos">Videos</a><a href="#concerts">Upcoming Concerts</a><a href="#photos">Photos</a><a href="#contact">Contact</a>
+</div>
+</header>
+
+<section id="home" class="hero">
+<h1>Professional Wind Quintet</h1>
+<p>Space for a striking introduction and featured image.</p>
+<div class="quote">“Insert a memorable quote or review here.”</div>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<div class="placeholder">Ensemble Photo</div>
+<p>Space for an overall ensemble biography.</p>
+<h3>Individual Biographies</h3>
+<div class="cardgrid">
+<div class="bio-card"><div class="placeholder">Photo</div><h4>Musician Name 1</h4><p>Biography text.</p></div>
+<div class="bio-card"><div class="placeholder">Photo</div><h4>Musician Name 2</h4><p>Biography text.</p></div>
+<div class="bio-card"><div class="placeholder">Photo</div><h4>Musician Name 3</h4><p>Biography text.</p></div>
+<div class="bio-card"><div class="placeholder">Photo</div><h4>Musician Name 4</h4><p>Biography text.</p></div>
+<div class="bio-card"><div class="placeholder">Photo</div><h4>Musician Name 5</h4><p>Biography text.</p></div>
+</div>
+</section>
+
+<section id="musicians"><h2>Musicians</h2><p>Additional musician information or instrumentation details can go here.</p></section>
+
+<section id="videos">
+<h2>Videos</h2>
+<div class="cardgrid">
+<div class="embed">Embedded YouTube Video</div>
+<div class="embed">Embedded YouTube Video</div>
+<div class="embed">Embedded YouTube Video</div>
+</div>
+</section>
+
+<section id="concerts"><h2>Upcoming Concerts</h2><p>Add future performances, venues and ticket links here.</p></section>
+
+<section id="photos"><h2>Photos</h2><div class="cardgrid"><div class="placeholder">Photo</div><div class="placeholder">Photo</div><div class="placeholder">Photo</div></div></section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: ensemble@example.com</p>
+<div class="social">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-spotify"></i></a>
+</div>
+</section>
+
+<footer>© 2026 Wind Quintet. All rights reserved.</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('show');}
+document.querySelectorAll('.mobile a').forEach(a=>a.onclick=()=>document.getElementById('mobileMenu').classList.remove('show'));
+</script>
+</body>
+</html>
