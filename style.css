@@ -27,6 +27,7 @@ footer{background:#1e5aa8;color:white;text-align:center;padding:20px;margin-top:
 
 .photo {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background: #f4f7fb;
 }
