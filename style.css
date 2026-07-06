@@ -1,9 +1,7 @@
 
 html{scroll-behavior:smooth;}
 body {
-    margin:0;
-    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
-    line-height:1.6;color:#1f2937
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro;
     font-weight: normal;
 }
 header{position:sticky;top:0;z-index:1000}
