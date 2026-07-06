@@ -4,6 +4,9 @@ body {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro;
     font-weight: normal;
 }
+
+
+
 header{position:sticky;top:0;z-index:1000}
 .navbar{background:#1e5aa8;color:white;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
 .logo{font-size:1.5rem;font-weight:bold}
@@ -33,9 +36,15 @@ footer{background:#1e5aa8;color:white;text-align:center;padding:20px;margin-top:
     aspect-ratio: 3 / 4;
     object-fit: contain;
     background: #f4f7fb;
+        max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .not-photo {
+        max-width: 100%;
+    height: auto;
+    display: block;
    width: 100%;
     height: 320px;
     object-fit: cover;
