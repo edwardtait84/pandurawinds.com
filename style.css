@@ -18,18 +18,18 @@ header{position:sticky;top:0;z-index:1000}
 .mobile a{padding:12px;text-decoration:none;color:#1e5aa8;border-bottom:1px solid #ddd}
 .mobile.show{display:flex}
 main{padding:50px 10%}
-.hero{background:#f4f7fb;padding:80px 10%;text-align:center}
+.hero{background:white;padding:80px 10%;text-align:center}
 .quote{font-style:italic;font-size:1.3rem;max-width:800px;margin:auto}
 .cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:20px}
 .box,.concert{background:#dbeafe;border-radius:8px;padding:30px;min-height:160px;display:flex;align-items:center;justify-content:center;text-align:center}
 .bio-card{
-    border:1px solid #white;
+    border:1px solid white;
     border-radius:8px;
     padding:15px
 }
 .bio-photo{
     height:220px;
-    background:#white;
+    background: white;
     border-radius:8px;
     align-items:center;
     justify-content:center;
