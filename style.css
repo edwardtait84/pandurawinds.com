@@ -8,14 +8,14 @@ body {
 
 
 header{position:sticky;top:0;z-index:1000}
-.navbar{background:#1e5aa8;color:white;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.navbar{background:#add8e6;color:white;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
 .logo{font-size:1.5rem;font-weight:bold}
 .nav-links{display:flex;gap:18px}
 .nav-links a{color:white;text-decoration:none;padding:8px 12px;border-radius:4px}
-.nav-links a:hover,.mobile a:hover{background:white;color:#1e5aa8}
+.nav-links a:hover,.mobile a:hover{background:white;color:#add8e6}
 .menu-toggle{display:none;color:white;cursor:pointer}
 .mobile{display:none;flex-direction:column;background:white}
-.mobile a{padding:12px;text-decoration:none;color:#1e5aa8;border-bottom:1px white}
+.mobile a{padding:12px;text-decoration:none;color:#add8e6;border-bottom:1px white}
 .mobile.show{display:flex}
 main{padding:50px 10%}
 .hero{background:white;padding:80px 10%;text-align:center}
@@ -36,8 +36,8 @@ main{padding:50px 10%}
     margin-bottom:10px
     max-width: 100%;
 }
-footer{background:#1e5aa8;color:white;text-align:center;padding:20px;margin-top:50px}
-.social a{font-size:2rem;color:#1e5aa8;margin-right:15px}
+footer{background:#add8e6;color:white;text-align:center;padding:20px;margin-top:50px}
+.social a{font-size:2rem;color:#add8e6;margin-right:15px}
 @media(max-width:850px){
 .nav-links{display:none}
 .menu-toggle{display:block}
