@@ -1,7 +1,7 @@
 
 html{scroll-behavior:smooth;}
 body {
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro;
+    font-family: "Neue Helvetica Paneuropean", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
 
@@ -15,7 +15,7 @@ header{position:sticky;top:0;z-index:1000}
 .nav-links a:hover,.mobile a:hover{background:white;color:#baf1f7}
 .menu-toggle{display:none;color:white;cursor:pointer}
 .mobile{display:none;flex-direction:column;background:white}
-.mobile a{padding:12px;text-decoration:none;color:#baf1f7;border-bottom:1px white}
+.mobile a{padding:12px;text-decoration:none;color:blue;border-bottom:1px white}
 .mobile.show{display:flex}
 main{padding:50px 10%}
 .hero{background:white;padding:80px 10%;text-align:center}
@@ -61,4 +61,69 @@ footer{background:#baf1f7;color:white;text-align:center;padding:20px;margin-top:
     height: 320px;
     object-fit: cover;
     object-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.message-box {
+  font-family: "Neue Helvetica Paneuropean", Helvetica, Arial, sans-serif;
+  max-width: 450px;
+  padding: 28px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.message-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.message-box input,
+.message-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.message-box textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.message-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.message-box button:hover {
+  opacity: 0.85;
 }
